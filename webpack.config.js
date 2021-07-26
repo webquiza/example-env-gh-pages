@@ -6,7 +6,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: "/example-env-gh-pages/"
   },
   devtool: 'eval-source-map',  
   devServer: {                 
